@@ -9,20 +9,22 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="UK Bar · British Spirit. Valpo Nights.">
   <meta property="og:description" content="Propuesta de nueva experiencia digital para UK Bar, Valparaíso.">
-  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview/assets/og-v4.jpg">
+  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview/assets/og-v5.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>UK Bar — British Rock Pub · Propuesta V4</title>
+  <title>UK Bar — British Rock Pub · Propuesta V5</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/pub-collage.webp" as="image">
+  <link rel="preload" href="assets/hero-v5.webp" as="image">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="v4.css">
+  <link rel="stylesheet" href="v5.css">
   <script src="script.js" defer></script>
   <script src="v4.js" defer></script>
+  <script src="v5.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
@@ -34,43 +36,54 @@
       <span class="brand-wordmark">UK <em>BAR</em><small>VALPARAÍSO · CHILE</small></span>
     </a>
     <nav class="navigation" aria-label="Navegación principal">
+      <a href="#inicio">INICIO</a>
       <a href="#elbar">EL BAR</a>
-      <a href="#carta">LA CARTA</a>
-      <a href="#galeria">LA EXPERIENCIA</a>
-      <a href="#visitanos">DÓNDE ESTAMOS</a>
+      <a href="#carta">CARTA</a>
+      <a href="#cervezas" data-target-tab="cervezas">CERVEZAS</a>
+      <a href="#galeria">GALERÍA</a>
+      <a href="#agenda">EVENTOS</a>
     </nav>
     <a class="button button-small button-red header-action" href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a>
     <button class="menu-toggle" aria-label="Abrir menú" aria-controls="mobile-menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
   </header>
   <nav class="mobile-menu" id="mobile-menu" aria-label="Navegación móvil" hidden>
-    <a href="#elbar">EL BAR</a><a href="#carta">LA CARTA</a><a href="#galeria">LA EXPERIENCIA</a><a href="#visitanos">DÓNDE ESTAMOS</a>
+    <a href="#inicio">INICIO</a><a href="#elbar">EL BAR</a><a href="#carta">CARTA</a><a href="#cervezas" data-target-tab="cervezas">CERVEZAS</a><a href="#galeria">GALERÍA</a><a href="#agenda">EVENTOS</a><a href="#visitanos">VISÍTANOS</a>
     <a href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA ↗</a>
   </nav>
 
   <main id="main">
-    <section class="hero pub-hero" id="inicio" aria-labelledby="hero-title">
-      <div class="pub-hero-wall" aria-hidden="true"></div>
-      <div class="pub-jack pub-jack-left" aria-hidden="true"></div>
-      <div class="pub-hero-content">
-        <div class="pub-hero-tag"><span class="pub-crown" aria-hidden="true">♛</span> UK BAR · VALPARAÍSO <span class="pub-cross" aria-hidden="true">✳</span> ROCK & CRAFT</div>
-        <h1 id="hero-title"><span class="pub-title-cream">BRITISH <br class="pub-mobile-break">SPIRIT.</span><span class="pub-title-red">VALPO <br class="pub-mobile-break">NIGHTS.</span></h1>
-        <p class="pub-hero-subline">CRAFT BEER <span>✦</span> GOOD FOOD <span>✦</span> GREAT MUSIC</p>
-        <p class="pub-hero-description">Un bar con alma británica en el corazón de Valparaíso. Cervezas artesanales, cocina para compartir y la banda sonora perfecta.</p>
-        <div class="hero-actions"><a href="#carta" class="button button-red">VER NUESTRA CARTA <span aria-hidden="true">↗</span></a><a href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer" class="button pub-outline">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a></div>
-        <div class="pub-london-mark" aria-hidden="true">GOOD PEOPLE<br>GOOD BEER<br>GREAT MUSIC</div>
+    <section class="hero pub-hero v5-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="v5-hero-grain" aria-hidden="true"></div>
+      <div class="v5-left-poster" aria-hidden="true"><span>LIVE<br>BRITISH<br>CRAFT<br>BEER</span></div>
+      <div class="v5-hero-content">
+        <div class="v5-eyebrow">✳ &nbsp; UK BAR · VALPARAÍSO &nbsp; ✳</div>
+        <h1 id="hero-title"><span class="pub-title-cream">BRITISH SPIRIT.</span><span class="pub-title-red">VALPO NIGHTS.</span></h1>
+        <div class="v5-line"><span>CRAFT BEER</span><b>✳</b><span>GOOD FOOD</span><b>✳</b><span>GREAT MUSIC</span></div>
+        <p>Un bar con carácter en el corazón de Valparaíso. Cervezas artesanales, cocina para compartir y una banda sonora que siempre invita a quedarse.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#carta">VER NUESTRA CARTA <span aria-hidden="true">↗</span></a>
+          <a class="button pub-outline" href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a>
+        </div>
       </div>
-      <div class="pub-hero-side" aria-hidden="true"><div class="pub-photo-stamp">BRITISH<br>BY NATURE <span>✳</span></div><div class="pub-side-caption">THIS IS YOUR KIND OF NIGHT ↗</div></div>
+      <div class="v5-hero-right" aria-hidden="true">
+        <div class="v5-hero-seal">UK<br><small>BAR & RESTAURANT</small></div>
+        <div class="v5-rock-roundel">✳</div>
+        <div class="v5-wall-sign">GOOD<br>PEOPLE<br>GOOD<br>BEER<br><b>GREAT<br>MUSIC</b></div>
+      </div>
+      <div class="v5-bottom-edge" aria-hidden="true">VALPARAÍSO &nbsp; • &nbsp; BRITISH SOUL &nbsp; • &nbsp; CRAFT BEER &nbsp; • &nbsp; THE NIGHT IS OURS</div>
     </section>
-    <section class="pub-features" aria-label="Descubre nuestros favoritos">
-      <a class="pub-feature pub-feature-food" href="#carta" data-target-tab="comida">
-        <span class="pub-feature-caption">LA COCINA / 01</span><h2>GOOD <em>FOOD.</em></h2><p>Pizzas, chorrillanas, tablas y platos para compartir.</p><span class="pub-feature-link">EXPLORAR CARTA ↗</span>
+    <section class="pub-features v5-features" aria-label="Explora UK Bar">
+      <a class="pub-feature pub-feature-food" href="#carta" data-target-tab="comida"><span class="pub-feature-caption">01 / LA COCINA</span><h2>COMIDA<span>.</span></h2><p>Sabores con actitud. Pizzas, hamburguesas y platos para compartir.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
+      <a class="pub-feature pub-feature-beer" href="#cervezas" data-target-tab="cervezas"><span class="pub-feature-caption">02 / DE BARRIL</span><h2>CERVEZAS<span>.</span></h2><p>Del primer schop al último brindis. Explora nuestros estilos.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
+      <a class="pub-feature pub-feature-drinks" href="#carta" data-target-tab="cocteles"><span class="pub-feature-caption">03 / EN LA BARRA</span><h2>COCTELERÍA<span>.</span></h2><p>Clásicos y creaciones de autor para grandes noches.</p><span class="pub-feature-link" aria-hidden="true">↗</span></a>
+    </section>
+    <section class="v5-quick-links" aria-label="Novedades y enlaces principales">
+      <a class="v5-quick v5-happy" href="#carta" data-target-tab="cervezas">
+        <div><span class="v5-mini">THE PUB SPECIAL / 01</span><h2>HAPPY<br><em>INTENSO.</em></h2><p>Consulta las promociones vigentes directamente con UK Bar.</p><strong>CONSULTAR CARTA ↗</strong></div>
+        <img src="assets/shops-pair.webp" width="660" height="635" alt="Dos schop en vasos con el logo original UK Bar" loading="lazy">
       </a>
-      <a class="pub-feature pub-feature-beer" href="#carta" data-target-tab="cervezas">
-        <span class="pub-feature-caption">EN LA BARRA / 02</span><h2>CRAFT <em>BEER.</em></h2><p>Schop en vasos UK. Rubias, rojas, IPA y más.</p><span class="pub-feature-link">VER CERVEZAS ↗</span>
-      </a>
-      <a class="pub-feature pub-feature-drinks" href="#carta" data-target-tab="cocteles">
-        <span class="pub-feature-caption">LA COCTELERÍA / 03</span><h2>GREAT <em>DRINKS.</em></h2><p>Cócteles de autor y clásicos para grandes noches.</p><span class="pub-feature-link">VER COCTELERÍA ↗</span>
-      </a>
+      <a class="v5-quick v5-quick-menu" href="#carta"><span class="v5-mini">FOOD & DRINKS / 02</span><h2>MENÚ.</h2><p>La carta digital, clara y siempre a mano.</p><strong>VER NUESTRA CARTA ↗</strong></a>
+      <a class="v5-quick v5-quick-gallery" href="#galeria"><span class="v5-mini">THE EXPERIENCE / 03</span><h2>GALERÍA.</h2><p>Los sabores y momentos que hacen único al bar.</p><strong>CONOCE UK BAR ↗</strong></a>
     </section>
     <div class="marquee" aria-label="Cervezas artesanales, rock británico, coctelería y buena compañía">
       <div class="marquee-track" aria-hidden="true">CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b> CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b></div>
@@ -93,17 +106,7 @@
       </div>
     </section>
 
-    <section class="pub-promo" aria-labelledby="promo-title">
-      <div class="pub-promo-copy">
-        <div class="promo-intro"><span class="bolt" aria-hidden="true">ϟ</span> FROM UK BAR WITH LOVE <span class="bolt" aria-hidden="true">ϟ</span></div>
-        <h2 id="promo-title">HAPPY<br><span>INTENSO.</span></h2>
-        <div class="promo-time">MARTES A JUEVES <span>✳</span> 17:00 A 18:30 HRS.</div>
-        <p>2×1 en cócteles y cervezas seleccionadas, según la carta del local.</p>
-        <a class="button button-red" href="#carta" data-target-tab="cervezas">VER CERVEZAS <span aria-hidden="true">↗</span></a>
-        <small>Promoción sujeta a disponibilidad y confirmación. Los precios publicados pueden variar.</small>
-      </div>
-      <div class="pub-promo-photo"><img src="assets/shops-pair.webp" loading="lazy" alt="Schop en vasos UK Bar con el emblema de la marca"><span class="promo-photo-mark">CHEERS,<br>MATE!</span></div>
-    </section>
+    <span id="cervezas" class="anchor-sentinel" aria-hidden="true"></span>
     <section class="menu-section section-padding" id="carta" aria-labelledby="menu-title">
       <div class="section-index"><span>02 / FOOD & DRINKS</span><span>CARTA OFICIAL</span></div>
       <div class="menu-intro">
@@ -133,12 +136,12 @@
         <article class="menu-item" data-category="cocteles" hidden><div class="item-label">ESPECIAL</div><div class="item-title"><h3>LIMONCELLO SPRITZ</h3><strong>$6.500</strong></div><p>Limoncello artesanal, espumante Brut y soda.</p></article>
         <article class="menu-item" data-category="cocteles" hidden><div class="item-label">COCTELERÍA DE AUTOR</div><div class="item-title"><h3>VAYA BAYA!</h3><strong>$6.500</strong></div><p>Gin, cassis, Ramazzotti, frambuesa, frutilla y limón.</p></article>
 
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">CREAM ALE · 300 CC</div><div class="item-title"><h3>CODA · CREAM ALE</h3><strong>$3.900</strong></div><p>Cerveza suave, refrescante y de cuerpo equilibrado. Pinta: $4.900.</p></article>
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">IMPERIAL IPA · 300 CC</div><div class="item-title"><h3>JESTER · LUPTOPIA</h3><strong>$5.900</strong></div><p>Intensa y lupulada, con aromas cítricos y frutales. Pinta: $6.900.</p></article>
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">HAZY IPA · 300 CC</div><div class="item-title"><h3>TAMANGO · CORTA CORRIENTE</h3><strong>$5.900</strong></div><p>Tropical y jugosa, con notas a mango y maracuyá. Pinta: $6.900.</p></article>
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">IRISH RED ALE · 300 CC</div><div class="item-title"><h3>TÜBINGER · IRISH RED ALE</h3><strong>$3.900</strong></div><p>Notas a frutos rojos, caramelo y bizcocho. Pinta: $4.900.</p></article>
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">PALE ALE · 300 CC</div><div class="item-title"><h3>D'OLBEK · MAQUI</h3><strong>$4.500</strong></div><p>Pale Ale con maqui del sur de Chile. Pinta: $5.500.</p></article>
-        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">AMERICAN IPA · 300 CC</div><div class="item-title"><h3>HORUS · ISIS</h3><strong>$4.500</strong></div><p>Cítrica y frutal, con amargor medio alto. Pinta: $5.500.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">CREAM ALE · 4,7% ABV · 18 IBU · 300 CC</div><div class="item-title"><h3>CODA · CREAM ALE</h3><strong>$3.900</strong></div><p>Cerveza suave, refrescante y de cuerpo equilibrado. Pinta: $4.900.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">IMPERIAL IPA · 9,0% ABV · 100 IBU · 300 CC</div><div class="item-title"><h3>JESTER · LUPTOPIA</h3><strong>$5.900</strong></div><p>Intensa y lupulada, con aromas cítricos y frutales. Pinta: $6.900.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">HAZY IPA · 6,0% ABV · 300 CC</div><div class="item-title"><h3>TAMANGO · CORTA CORRIENTE</h3><strong>$5.900</strong></div><p>Tropical y jugosa, con notas a mango y maracuyá. Pinta: $6.900.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">IRISH RED ALE · 5,5% ABV · 27 IBU · 300 CC</div><div class="item-title"><h3>TÜBINGER · IRISH RED ALE</h3><strong>$3.900</strong></div><p>Notas a frutos rojos, caramelo y bizcocho. Pinta: $4.900.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">PALE ALE · 5,8% ABV · 300 CC</div><div class="item-title"><h3>D'OLBEK · MAQUI</h3><strong>$4.500</strong></div><p>Pale Ale con maqui del sur de Chile. Pinta: $5.500.</p></article>
+        <article class="menu-item" data-category="cervezas" hidden><div class="item-label">AMERICAN IPA · 7,0% ABV · 50 IBU · 300 CC</div><div class="item-title"><h3>HORUS · ISIS</h3><strong>$4.500</strong></div><p>Cítrica y frutal, con amargor medio alto. Pinta: $5.500.</p></article>
       </div>
       <div class="menu-visuals">
         <figure class="visual-card"><img src="assets/pizza.webp" loading="lazy" alt="Pizza de UK Bar servida en la mesa"><figcaption>BUENA COMIDA <span>↗</span></figcaption></figure>
@@ -149,7 +152,7 @@
         <p>¿QUIERES VER TODOS LOS PRODUCTOS?<small>Accede a las cartas completas compartidas por el local.</small></p>
         <div><a href="https://drive.google.com/file/d/1BT2il7lNgm2EFWkiBkvd8CNZLvuGPjiC/view" target="_blank" rel="noopener noreferrer" class="button button-red">CARTA COMPLETA ↗</a><a href="https://drive.google.com/file/d/1eqj9Zos66-dzeZPRQ1Z0DYF29AqE05qz/view" target="_blank" rel="noopener noreferrer" class="button button-outline">CARTA DE CERVEZAS ↗</a><a href="https://drive.google.com/file/d/170NBJlYI7RiDH3IFN0h9wTarth-th9m_/view" target="_blank" rel="noopener noreferrer" class="button button-outline">ENGLISH MENU ↗</a></div>
       </div>
-      <p class="price-note">Los valores reflejan las cartas publicadas en septiembre y octubre de 2026. Los estilos de cerveza y los precios pueden variar. Validar disponibilidad y carta con UK Bar antes del lanzamiento oficial.</p>
+      <p class="price-note">Los valores proceden de cartas publicadas en 2026. La selección de barriles rota; los estilos, precios y disponibilidad pueden variar. Graduación e IBU se muestran solamente cuando aparecen en la lista consultada. Confirmar con UK Bar antes del lanzamiento oficial.</p>
     </section>
 
     <section class="statement" aria-labelledby="statement-title">
@@ -170,6 +173,7 @@
       </div>
     </section>
 
+    <section class="v5-agenda" id="agenda" aria-labelledby="agenda-title"><div class="v5-agenda-heading"><span>LA MÚSICA ES PARTE DEL BAR</span><h2 id="agenda-title">LA NOCHE<br>TIENE <em>SOUNDTRACK.</em></h2></div><div><p>Rock británico, buena conversación y el pulso de Valparaíso. Para próximas novedades, promociones o actividades, revisa los anuncios oficiales de UK Bar.</p><a href="https://www.instagram.com/ukbarvalpo/" class="button button-red" target="_blank" rel="noopener noreferrer">NOVEDADES EN INSTAGRAM ↗</a></div></section>
     <section id="visitanos" class="visit section-padding">
       <div class="section-index"><span>05 / FIND YOUR WAY</span><span>VALPARAÍSO, CHILE</span></div>
       <div class="visit-grid">
