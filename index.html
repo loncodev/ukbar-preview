@@ -9,18 +9,20 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="UK Bar · British Spirit. Valpo Nights.">
   <meta property="og:description" content="Propuesta de nueva experiencia digital para UK Bar, Valparaíso.">
-  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview/assets/og-preview.jpg">
+  <meta property="og:image" content="https://loncodev.github.io/ukbar-preview/assets/og-v4.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <title>UK Bar — British Spirit. Valpo Nights. | Vista previa</title>
+  <title>UK Bar — British Rock Pub · Propuesta V4</title>
   <link rel="icon" href="assets/favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="preload" href="assets/hero-beers.webp" as="image">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Roboto+Slab:wght@500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/pub-collage.webp" as="image">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="v4.css">
   <script src="script.js" defer></script>
+  <script src="v4.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Saltar al contenido</a>
@@ -46,25 +48,30 @@
   </nav>
 
   <main id="main">
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <div class="hero-edition"><span class="line"></span> THE BRITISH CORNER OF VALPARAÍSO <span class="edition-num">33°02′ S / 71°37′ O</span></div>
-        <h1 id="hero-title">BRITISH<br><span>SPIRIT.</span><br><i>VALPO</i><br>NIGHTS<span class="red-dot">.</span></h1>
-        <p>Una ciudad con carácter. Un bar con alma británica. Buena música, cervezas de verdad y mesas que siempre invitan a quedarse.</p>
-        <div class="hero-actions">
-          <a class="button button-red" href="#carta">DESCUBRE LA CARTA <span aria-hidden="true">↗</span></a>
-          <a class="button button-ghost" href="#elbar">CONOCE EL BAR <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="hero-foot"><span>ROCK · CERVEZA · BUENA COMPAÑÍA</span><span>001 / 004</span></div>
+    <section class="hero pub-hero" id="inicio" aria-labelledby="hero-title">
+      <div class="pub-hero-wall" aria-hidden="true"></div>
+      <div class="pub-jack pub-jack-left" aria-hidden="true"></div>
+      <div class="pub-hero-content">
+        <div class="pub-hero-tag"><span class="pub-crown" aria-hidden="true">♛</span> UK BAR · VALPARAÍSO <span class="pub-cross" aria-hidden="true">✳</span> ROCK & CRAFT</div>
+        <h1 id="hero-title"><span class="pub-title-cream">BRITISH <br class="pub-mobile-break">SPIRIT.</span><span class="pub-title-red">VALPO <br class="pub-mobile-break">NIGHTS.</span></h1>
+        <p class="pub-hero-subline">CRAFT BEER <span>✦</span> GOOD FOOD <span>✦</span> GREAT MUSIC</p>
+        <p class="pub-hero-description">Un bar con alma británica en el corazón de Valparaíso. Cervezas artesanales, cocina para compartir y la banda sonora perfecta.</p>
+        <div class="hero-actions"><a href="#carta" class="button button-red">VER NUESTRA CARTA <span aria-hidden="true">↗</span></a><a href="https://wa.me/56937264991?text=Hola%20UK%20Bar%2C%20quisiera%20consultar%20por%20una%20reserva." target="_blank" rel="noopener noreferrer" class="button pub-outline">CONSULTAR RESERVA <span aria-hidden="true">↗</span></a></div>
+        <div class="pub-london-mark" aria-hidden="true">GOOD PEOPLE<br>GOOD BEER<br>GREAT MUSIC</div>
       </div>
-      <div class="hero-image">
-        <img src="assets/hero-beers.webp" width="1080" height="1080" alt="Vasos de cerveza artesanal UK Bar en la barra" fetchpriority="high">
-        <div class="hero-image-overlay"></div>
-        <div class="hero-image-label"><span>THE NIGHT<br>IS YOUNG.</span><span class="star">✳</span></div>
-        <div class="hero-image-caption">GOOD TIMES ON TAP / UK BAR VALPARAÍSO</div>
-      </div>
+      <div class="pub-hero-side" aria-hidden="true"><div class="pub-photo-stamp">BRITISH<br>BY NATURE <span>✳</span></div><div class="pub-side-caption">THIS IS YOUR KIND OF NIGHT ↗</div></div>
     </section>
-
+    <section class="pub-features" aria-label="Descubre nuestros favoritos">
+      <a class="pub-feature pub-feature-food" href="#carta" data-target-tab="comida">
+        <span class="pub-feature-caption">LA COCINA / 01</span><h2>GOOD <em>FOOD.</em></h2><p>Pizzas, chorrillanas, tablas y platos para compartir.</p><span class="pub-feature-link">EXPLORAR CARTA ↗</span>
+      </a>
+      <a class="pub-feature pub-feature-beer" href="#carta" data-target-tab="cervezas">
+        <span class="pub-feature-caption">EN LA BARRA / 02</span><h2>CRAFT <em>BEER.</em></h2><p>Schop en vasos UK. Rubias, rojas, IPA y más.</p><span class="pub-feature-link">VER CERVEZAS ↗</span>
+      </a>
+      <a class="pub-feature pub-feature-drinks" href="#carta" data-target-tab="cocteles">
+        <span class="pub-feature-caption">LA COCTELERÍA / 03</span><h2>GREAT <em>DRINKS.</em></h2><p>Cócteles de autor y clásicos para grandes noches.</p><span class="pub-feature-link">VER COCTELERÍA ↗</span>
+      </a>
+    </section>
     <div class="marquee" aria-label="Cervezas artesanales, rock británico, coctelería y buena compañía">
       <div class="marquee-track" aria-hidden="true">CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b> CRAFT BEER <b>✳</b> BRITISH ROCK <b>✳</b> GOOD FOOD <b>✳</b> GOOD COMPANY <b>✳</b></div>
     </div>
@@ -86,8 +93,19 @@
       </div>
     </section>
 
+    <section class="pub-promo" aria-labelledby="promo-title">
+      <div class="pub-promo-copy">
+        <div class="promo-intro"><span class="bolt" aria-hidden="true">ϟ</span> FROM UK BAR WITH LOVE <span class="bolt" aria-hidden="true">ϟ</span></div>
+        <h2 id="promo-title">HAPPY<br><span>INTENSO.</span></h2>
+        <div class="promo-time">MARTES A JUEVES <span>✳</span> 17:00 A 18:30 HRS.</div>
+        <p>2×1 en cócteles y cervezas seleccionadas, según la carta del local.</p>
+        <a class="button button-red" href="#carta" data-target-tab="cervezas">VER CERVEZAS <span aria-hidden="true">↗</span></a>
+        <small>Promoción sujeta a disponibilidad y confirmación. Los precios publicados pueden variar.</small>
+      </div>
+      <div class="pub-promo-photo"><img src="assets/shops-pair.webp" loading="lazy" alt="Schop en vasos UK Bar con el emblema de la marca"><span class="promo-photo-mark">CHEERS,<br>MATE!</span></div>
+    </section>
     <section class="menu-section section-padding" id="carta" aria-labelledby="menu-title">
-      <div class="section-index"><span>02 / FOOD & DRINKS</span><span>LA CARTA REAL</span></div>
+      <div class="section-index"><span>02 / FOOD & DRINKS</span><span>CARTA OFICIAL</span></div>
       <div class="menu-intro">
         <div><span class="eyebrow"><span class="eyebrow-line"></span> NOMBRES DE LEYENDA</span><h2 id="menu-title">GOOD<br>FOOD. <em>GREAT</em><br>SONGS<span>.</span></h2></div>
         <p>De Gorillaz a Freddie Mercury: aquí cada plato tiene su propia banda sonora. Explora una selección de la carta oficial con precios publicados.</p>
@@ -142,7 +160,7 @@
 
     <section id="galeria" class="gallery section-padding" aria-labelledby="gallery-title">
       <div class="section-index"><span>04 / THE EXPERIENCE</span><span>FOTOS REALES DE UK BAR</span></div>
-      <div class="gallery-heading"><h2 id="gallery-title">EVERY<br>NIGHT HAS<br><span>A STORY.</span></h2><p>Desde el primer brindis hasta el último tema de la noche. Esto sí es UK Bar: su comida, su barra y su ambiente.</p></div>
+      <div class="gallery-heading"><h2 id="gallery-title">GOOD BEER.<br>GOOD PEOPLE.<br><span>GREAT MUSIC.</span></h2><p>Desde el primer brindis hasta el último tema de la noche. Esto sí es UK Bar: su comida, su barra y su ambiente.</p></div>
       <div class="photo-gallery">
         <figure class="gallery-card gallery-tall"><img loading="lazy" src="assets/cocktails.webp" alt="Vista cenital de coloridos cócteles"><figcaption>YOUR FIRST ROUND</figcaption></figure>
         <figure class="gallery-card"><img loading="lazy" src="assets/burger-fries.webp" alt="Hamburguesa con papas fritas en UK Bar"><figcaption>GOOD FOOD</figcaption></figure>
